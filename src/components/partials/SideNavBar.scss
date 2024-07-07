@@ -1,0 +1,136 @@
+.side-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: #333;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+  z-index: 10;
+  overflow-y: auto;
+
+  &.open {
+    transform: translateX(0);
+  }
+  &.closed {
+    // MOBILE DEVICES
+    @media (max-width: 768px) { 
+      display: none;
+    }
+  }
+
+  // @media (max-width: 768px) { // Target mobile devices
+  //   transform: translateX(-100%); // Hide sidebar by default
+  //   width: 75%; // Adjust width as needed for mobile
+  //   max-width: 250px; // Limit maximum width on larger mobile devices
+
+  //   &.open {
+  //     transform: translateX(0); 
+  //   }
+
+  //   .toggle-button {
+  //     display: block; // Show the toggle button on mobile
+  //   }
+  // }
+
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #222;
+
+    img {
+      height: 40px; // Adjust logo size as needed
+      margin-right: 10px;
+    }
+  }
+
+  // .toggle-button {
+  //   position: absolute;
+  //   top: 10px;
+  //   right: 10px;
+  //   background: none;
+  //   border: none;
+  //   font-size: 24px;
+  //   color: white;
+  //   cursor: pointer;
+
+  //   @media (min-width: 769px) {
+  //     display: none;
+  //   }
+  //   // MOBILE DEVICES
+  //   @media (max-width: 768px) { 
+  //     &.open{
+  //       // color: black;
+  //     }
+  //   }
+  // }
+
+  .nav-links {
+    list-style: none;
+    padding: 20px 0;
+
+    li {
+      &.active {
+        a {
+          background-color: #444;
+          color: #ffd700; // Example: Highlight with gold color
+        }
+      }
+
+      a {
+        display: block;
+        padding: 15px 25px;
+        text-decoration: none;
+        color: white;
+        transition: background-color 0.2s;
+
+        &:hover {
+          background-color: #555;
+        }
+
+        i { // Style the icons
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+ 
+}
+
+.side-nav-bar-toggle-button {
+  position: absolute;
+  top: 15px;
+  right: 150px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  z-index: 100;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+  // MOBILE DEVICES
+  @media (max-width: 768px) { 
+    &.closed{
+      color: black;
+      right: 14em;
+    }
+  }
+}
+
+ /* Closed State (Mobile) */
+//  @media (max-width: 768px) { 
+//   .side-nav-bar.closed {
+//     width: 0;
+//     overflow: hidden;
+//   }
+
+//   .side-nav-bar.closed .open-btn {
+//     /* Make the open button visible */
+//   }
+
+// }
