@@ -61,11 +61,13 @@ const SideNavBar = () => {
               <Link to="/dashboard">
                 <FontAwesomeIcon icon={faHome} /> Dashboard
               </Link>
-            </li><li className={location.pathname === '/settings' ? 'active' : ''}>
+            </li>
+            {/* <li className={location.pathname === '/settings' ? 'active' : ''}>
                 <Link to="/about">
                   <FontAwesomeIcon icon={faSignOutAlt} /> About
                 </Link>
-              </li><li className={location.pathname === '/settings' ? 'active' : ''}>
+              </li> */}
+              <li className={location.pathname === '/settings' ? 'active' : ''}>
                 <Link onClick={handleLogout}>
                   <FontAwesomeIcon icon={faSignOutAlt} /> Logout
                 </Link>

@@ -42,7 +42,10 @@ function About() {
     //     console.log('THIS HAS RUN 2')
     // })
     console.log('msgTxt>>>>>>>>>>>>>>>>>>>>>> ',msgTxt)
-    return (<><h2>About - ${msgTxt?.name} -- 2ndVal-- ${msgTxt?.age}</h2>
+    return (<>
+    <h1> This is Testing Page, where we could test out Redux</h1>
+    
+    <h2>About - ${msgTxt?.name} -- 2ndVal-- ${msgTxt?.age}</h2>
     <input type='text' placeholder='NAME' id='abtChangeTxt' onChange={(e)=> { saveObjfn(e, 'name')}}/>
 
     <br />
