@@ -20,7 +20,7 @@ This project is a React.js application that integrates with a Metadata Scraper A
 ## Table of Contents
 
 - [Installation](#installation)
-- [High Level Architecture](#High Level Architecture)
+- [High Level Architecture](#High-Level-Architecture)
 - [Usage](#usage)
 - [API Integration](#api-integration)
 - [Contact](#contact)
@@ -54,7 +54,7 @@ This project is a React.js application that integrates with a Metadata Scraper A
     npm start
     ```
 
-## High Level Architecture
+## High-Level-Architecture
 Here’s a high-level overview of the architecture:
 
 User --> CloudFront (Content Delivery Network) --> S3 Bucket (Static React App) --> API Gateway (API Endpoints) --> EC2 Instance (Node.js Express) --> MongoDB Atlas
