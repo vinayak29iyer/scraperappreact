@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# React.js App with Metadata Scraper API Integration
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Axios](https://img.shields.io/badge/Axios-671DDF?style=for-the-badge&logo=axios&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![Redux-Tool-Kit](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This project is a React.js application that integrates with a Metadata Scraper API mentioned (https://github.com/vinayak29iyer/scraperappreact) . It demonstrates how to create a seamless front-end interface to interact with a backend service, showcasing my skills in React, Redux-Tool-Kit, Axios, and API integration.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Metadata Retrieval:** Users can input a URL to retrieve and display metadata such as title, description, keywords, and primary image.
+- **Responsive Design:** The app is fully responsive, providing a great user experience on both desktop and mobile devices.
+- **Error Handling:** Proper error handling ensures users are informed of issues like invalid URLs or network errors.
+- **Clean UI:** A user-friendly interface designed with simplicity and usability in mind.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Table of Contents
 
-### `npm test`
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Integration](#api-integration)
+- [Contact](#contact)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+1. **Clone the repository:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    git clone https://github.com/vinayak29iyer/scraperappreact.git
+    cd scraperappreact
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    npm install
+    ```
 
-### `npm run eject`
+3. **Create a `.env` file in the root directory and add the following:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```env
+    REACT_APP_BASE_API='YOUR NODE APP BASE URL ex: "{http://localhost:3000}"'
+    REACT_APP_LOGIN_API='/api/auth/login'
+    REACT_APP_SCRAPER_API='/api/websitescraper/fetch-metadata'
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Start the development server:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```bash
+    npm start
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+1. Open your browser and navigate to `http://localhost:3000`.
+2. Enter a URL in the input field and click the "Scrape Metadata" button.
+3. View the retrieved metadata displayed on the page.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## API Integration
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This app integrates with a Metadata Scraper API built with Node.js and Express. The API endpoint accepts a URL as a query parameter and returns metadata in JSON format.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+- **LinkedIn:** [Your LinkedIn](https://www.linkedin.com/in/vinayak-iyer-65610b17)
