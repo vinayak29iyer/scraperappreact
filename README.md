@@ -23,7 +23,6 @@ This project is a React.js application that integrates with a Metadata Scraper A
 - [High Level Architecture](#High-Level-Architecture)
 - [Usage](#usage)
 - [API Integration](#api-integration)
-- [Contact](#contact)
 
 ## Installation
 
@@ -78,7 +77,4 @@ This high-level diagram provides a clear visual representation of the major comp
 
 ## API Integration
 
-This app integrates with a Metadata Scraper API built with Node.js and Express. The API endpoint accepts a URL as a query parameter and returns metadata in JSON format.
-
-## Contact
-- **LinkedIn:** [Your LinkedIn](https://www.linkedin.com/in/vinayak-iyer-65610b17)
+This app integrates with a Metadata Scraper API built with Node.js and Express. The 
