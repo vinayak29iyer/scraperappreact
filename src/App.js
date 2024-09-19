@@ -5,6 +5,7 @@ import About from './components/About';
 import Counter from './components/Counter';
 import Login from './components/Login/login';
 import Dasboard from './components/Dashboard/DasbhboardMain';
+import UserManagement from './components/UserManagement/UserManagementMain';
 import ProtectedRoute from './components/Protectedroutes/Protectedroute';
 import PageNotFound from './components/Error/Pagenotfound'
 
@@ -26,7 +27,9 @@ function App() {
                     <Route path="/home" element={<Home />} /> 
                     <Route path="/about" element={<About />} /> 
                     <Route path="/counter" element={<Counter />} /> 
-                    <Route path="/dashboard" element={<Dasboard />} /> 
+                    <Route path="/dashboard" element={<Dasboard />} />
+                    <Route path="/userlist" element={<UserManagement />} />
+                    <Route path="/usersave" element={<UserManagement />} />
                 </Route>
             </Routes>
         </div>

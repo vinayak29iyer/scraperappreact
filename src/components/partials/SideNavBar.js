@@ -62,6 +62,17 @@ const SideNavBar = () => {
                 <FontAwesomeIcon icon={faHome} /> Dashboard
               </Link>
             </li>
+            {/* <li className={location.pathname === '/userlist' || '/usersave' ? 'active' : ''}> */}
+            <li className={['/userlist','/usersave'].includes(location.pathname) ? 'active' : ''}>
+              <Link to="/userlist">
+                <FontAwesomeIcon icon={faHome} /> List Users
+              </Link>
+            </li>
+            {/* <li className={location.pathname === '/usersave' ? 'active' : ''}>
+              <Link to="/usersave">
+                <FontAwesomeIcon icon={faHome} /> Save Users
+              </Link>
+            </li> */}
             {/* <li className={location.pathname === '/settings' ? 'active' : ''}>
                 <Link to="/about">
                   <FontAwesomeIcon icon={faSignOutAlt} /> About
