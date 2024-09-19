@@ -20,9 +20,9 @@ This project is a React.js application that integrates with a Metadata Scraper A
 ## Table of Contents
 
 - [Installation](#installation)
+- [High Level Architecture](#High-Level-Architecture)
 - [Usage](#usage)
 - [API Integration](#api-integration)
-- [Contact](#contact)
 
 ## Installation
 
@@ -53,6 +53,22 @@ This project is a React.js application that integrates with a Metadata Scraper A
     npm start
     ```
 
+## High-Level-Architecture
+Here’s a high-level overview of the architecture:
+
+User --> CloudFront (Content Delivery Network) --> S3 Bucket (Static React App) --> API Gateway (API Endpoints) --> EC2 Instance (Node.js Express) --> MongoDB Atlas
+
+
+ **Diagram Explanation:**
+1. User: The user interacts with your web application through a web browser.
+2. CloudFront: This content delivery network caches your static React app across the globe, ensuring fast and efficient content delivery to users worldwide.
+3. S3 Bucket: Your React app (built using npm run build or a similar command) is stored as static files (HTML, CSS, JavaScript) in an S3 bucket.
+4. API Gateway: When your React app needs to perform scraping or access data, it sends requests to the API Gateway. This gateway acts as a front door, handling authentication, request routing, and other API management tasks.
+5. EC2 Instance: The Node.js Express API runs on an EC2 instance. This is where your scraping logic resides and where data is processed and retrieved from the database & Scrapper API(AXIOS).
+6. MongoDB Atlas: Your scraped metadata is stored in MongoDB Atlas, a fully managed cloud database service. This provides scalability, flexibility, and ease of management for your data. I have added a ttl of 5mins to avoid high data retention.
+
+This high-level diagram provides a clear visual representation of the major components and their interactions within your AWS architecture.
+
 ## Usage
 
 1. Open your browser and navigate to `http://localhost:3000`.
@@ -61,7 +77,4 @@ This project is a React.js application that integrates with a Metadata Scraper A
 
 ## API Integration
 
-This app integrates with a Metadata Scraper API built with Node.js and Express. The API endpoint accepts a URL as a query parameter and returns metadata in JSON format.
-
-## Contact
-- **LinkedIn:** [Your LinkedIn](https://www.linkedin.com/in/vinayak-iyer-65610b17)
+This app integrates with a Metadata Scraper API built with Node.js and Express. The 
